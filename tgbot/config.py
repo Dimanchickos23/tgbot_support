@@ -22,7 +22,6 @@ class TgBot:
 class Miscellaneous:
     other_params: str = None
 
-
 @dataclass
 class Config:
     tg_bot: TgBot
@@ -48,3 +47,5 @@ def load_config(path: str = None):
         ),
         misc=Miscellaneous()
     )
+
+support_ids=[331572613]

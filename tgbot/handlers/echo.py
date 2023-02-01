@@ -13,6 +13,7 @@ async def bot_echo(message: types.Message):
     await message.answer('\n'.join(text))
 
 
+
 async def bot_echo_all(message: types.Message, state: FSMContext):
     state_name = await state.get_state()
     text = [
